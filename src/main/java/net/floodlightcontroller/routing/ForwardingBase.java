@@ -158,8 +158,6 @@ public abstract class ForwardingBase
     @Override
     public Command receive(IOFSwitch sw, OFMessage msg,
                            FloodlightContext cntx) {
-<<<<<<< Updated upstream
-=======
     	//By Teja
     	System.out.println(" T recieve");
     	System.out.print("IOFSwitch ");
@@ -168,7 +166,6 @@ public abstract class ForwardingBase
     	System.out.println(msg);
     	System.out.println("FL Context ");
     	System.out.println(cntx);
->>>>>>> Stashed changes
         switch (msg.getType()) {
             case PACKET_IN:
                 IRoutingDecision decision = null;
